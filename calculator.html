@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="disply">
+                    <input type="text" name="disply">
+                </div>
+                <div class="button">
+                <div>
+                    <input type="button" value="AC" onclick="disply.value = ''" class="oparetor">
+                    <input type="button" value="DE" onclick="disply.value = disply.value.toString().slice(0, -1)" class="oparetor">
+                    <input type="button" value="." onclick="disply.value += '.'" class="oparetor">
+                    <input type="button" value="/" onclick="disply.value += '/'" class="oparetor">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="disply.value += '7'">
+                    <input type="button" value="8" onclick="disply.value += '8'">
+                    <input type="button" value="9" onclick="disply.value += '9'">
+                    <input type="button" value="x" onclick="disply.value += '*'" class="oparetor">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="disply.value += '4'">
+                    <input type="button" value="5" onclick="disply.value += '5'">
+                    <input type="button" value="6" onclick="disply.value += '6'">
+                    <input type="button" value="-" onclick="disply.value += '-'" class="oparetor">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="disply.value += '1'">
+                    <input type="button" value="2" onclick="disply.value += '2'">
+                    <input type="button" value="3" onclick="disply.value += '3'">
+                    <input type="button" value="+" onclick="disply.value += '+'" class="oparetor">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="disply.value += '00'">
+                    <input type="button" value="0" onclick="disply.value += '0'">
+                    <input type="button" value="=" onclick="disply.value = eval(disply.value)" class="equal oparetor">
+                </div></div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
